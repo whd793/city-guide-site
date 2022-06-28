@@ -66,9 +66,9 @@ img {
 }
 
 
-/* .main-nav {
+.main-nav {
     margin-top: 5px;
-} */
+}
 
 .name a,
 .main-nav a {
@@ -132,7 +132,7 @@ img {
 /* Media queries */
 @media screen and (min-width: 769px){
     .main-header,.row {
-        width: 90%;
+        width: 70%;
         /* margin: auto; */
     }
     .tagline {
@@ -146,6 +146,33 @@ img {
         max-width: 1150px;
     }
 }
+
+/* flex layout */
+@media screen and (min-width: 769px){
+.main-header, 
+.main-nav { 
+/*possible to make flex item to be flex 
+container */
+    display: flex;
+}
+
+.main-header{
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+}
+}
+
+@media screen and (min-width: 1025px){
+    .main-header, .row {
+        flex-direction: row;
+
+    }
+}
+
+
+
+
 
 
 /* Flexbox Layout */
@@ -195,4 +222,5 @@ overflowing or collapsing*/
 why use flex?
 1. clearfix to prevent elements collapsing
 2. default space problem for inline-block */
+
 
